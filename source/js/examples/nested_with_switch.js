@@ -1,6 +1,6 @@
 $(function () {
   var oldContainer;
-  $("ol.nested_with_switch").sortable({
+  $("ol.nested_with_switch").integratedSortable({
     group: 'nested',
     afterMove: function (placeholder, container) {
       if(oldContainer != container){
@@ -19,6 +19,6 @@ $(function () {
 
   $(".switch-container").on("click", ".switch", function  (e) {
     var method = $(this).hasClass("active") ? "enable" : "disable";
-    $(e.delegateTarget).next().sortable(method);
+    $(e.delegateTarget).next().integratedSortable(method);
   });
 });

@@ -1,5 +1,5 @@
 $(function () {
-  var container = $('ol.test').sortable().data("sortable"),
+  var container = $('ol.test').integratedSortable().data("sortable"),
   group = container.group
   group.relativePointer = $('ol.test li:eq(2)').position()
   if (window.console && window.console.profile) {

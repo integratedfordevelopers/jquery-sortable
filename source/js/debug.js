@@ -2,7 +2,7 @@
 //= require "jquery-sortable"
 
 $(function () {
-	$('#root.region').sortable({
+	$('#root.region').integratedSortable({
 		group: 'nested',
 		itemSelector: '.part, .layout',
     containerSelector: '.region',

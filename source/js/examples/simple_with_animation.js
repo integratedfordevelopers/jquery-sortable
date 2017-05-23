@@ -1,7 +1,7 @@
 $(function  () {
   var adjustment;
 
-  $("ol.simple_with_animation").sortable({
+  $("ol.simple_with_animation").integratedSortable({
     group: 'simple_with_animation',
     pullPlaceholder: false,
     // animation on drop

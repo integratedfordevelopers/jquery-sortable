@@ -1,6 +1,6 @@
 $(function () {
   // Sortable rows
-  $('.sorted_table').sortable({
+  $('.sorted_table').integratedSortable({
     containerSelector: 'table',
     itemPath: '> tbody',
     itemSelector: 'tr',
@@ -9,7 +9,7 @@ $(function () {
 
   // Sortable column heads
   var oldIndex;
-  $('.sorted_head tr').sortable({
+  $('.sorted_head tr').integratedSortable({
     containerSelector: 'tr',
     itemSelector: 'th',
     placeholder: '<th class="placeholder"/>',

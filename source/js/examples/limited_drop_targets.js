@@ -1,5 +1,5 @@
 $(function  () {
-  var group = $("ol.limited_drop_targets").sortable({
+  var group = $("ol.limited_drop_targets").integratedSortable({
     group: 'limited_drop_targets',
     isValidTarget: function  ($item, container) {
       if($item.is(".highlight"))
@@ -9,7 +9,7 @@ $(function  () {
     },
     onDrop: function ($item, container, _super) {
       $('#serialize_output').text(
-        group.sortable("serialize").get().join("\n"));
+        group.integratedSortable("serialize").get().join("\n"));
       _super($item, container);
     },
     serialize: function (parent, children, isContainer) {

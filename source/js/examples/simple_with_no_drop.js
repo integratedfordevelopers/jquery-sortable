@@ -1,5 +1,5 @@
 $(function() {
-  $("ol.simple_with_drop").sortable({
+  $("ol.simple_with_drop").integratedSortable({
     group: 'no-drop',
     handle: 'i.icon-move',
     onDragStart: function ($item, container, _super) {
@@ -9,11 +9,11 @@ $(function() {
       _super($item, container);
     }
   });
-  $("ol.simple_with_no_drop").sortable({
+  $("ol.simple_with_no_drop").integratedSortable({
     group: 'no-drop',
     drop: false
   });
-  $("ol.simple_with_no_drag").sortable({
+  $("ol.simple_with_no_drag").integratedSortable({
     group: 'no-drop',
     drag: false
   });
